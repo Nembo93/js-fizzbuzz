@@ -6,24 +6,44 @@ const container = document.getElementById(`#conatinerId`);
 let i = 0;
 for (let i = 1; i <= 100; i++ ){
     // Crea elementi in html corrispondenti al volore del contatore
-    let box = document.createElement(`div`);
-    // box.classList.add(`.box`);
-    let textI = document.createTextNode(i);
-    box.appendChild(textI);
-    document.getElementById(`containerId`).appendChild(box);
+    // let box = document.createElement(`div`);
+    // box.classList.add(`box`);
+    // let textI = document.createTextNode(i);
+    // box.appendChild(textI);
+    // document.getElementById(`containerId`).appendChild(box);
 
     if (((i % 3) == 0) && ((i % 5) == 0)){
         console.log(`fizzbuzz`);
+        let box = document.createElement(`div`);
+        box.classList.add(`box`);
+        let textI = document.createTextNode(`fizzbuzz`);
+        box.appendChild(textI);
+        document.getElementById(`containerId`).appendChild(box);
     }
     else if ((i % 3) == 0){
         console.log(`fizz`);
+        let box = document.createElement(`div`);
+        box.classList.add(`box`);
+        let textI = document.createTextNode(`fizz`);
+        box.appendChild(textI);
+        document.getElementById(`containerId`).appendChild(box);
     } 
     else if ((i % 5) == 0){
         console.log(`buzz`);
+        let box = document.createElement(`div`);
+        box.classList.add(`box`);
+        let textI = document.createTextNode(`buzz`);
+        box.appendChild(textI);
+        document.getElementById(`containerId`).appendChild(box);
     }
      
     else {
         console.log (i);
+        let box = document.createElement(`div`);
+        box.classList.add(`box`);
+        let textI = document.createTextNode(i);
+        box.appendChild(textI);
+        document.getElementById(`containerId`).appendChild(box);
     }
 }
 
