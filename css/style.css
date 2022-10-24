@@ -1,3 +1,9 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 .container{
     background-color: aqua;
     display: flex;
@@ -5,9 +11,12 @@
     width: 800px;
 }
 .box{
-    width: calc(100% / 8);
+    width: calc(100% / 7);
+    height: 50px;
     background-color: red;
     border: 1px solid blue;
-    text-align: center;
     line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
