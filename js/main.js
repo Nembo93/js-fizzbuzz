@@ -15,7 +15,7 @@ for (let i = 1; i <= 100; i++ ){
     if (((i % 3) == 0) && ((i % 5) == 0)){
         console.log(`fizzbuzz`);
         // let box = document.createElement(`div`);
-        // box.classList.add(`box`);
+        box.classList.add(`bg_color_red`);
         let textI = document.createTextNode(`fizzbuzz`);
         box.appendChild(textI);
         // document.getElementById(`containerId`).appendChild(box);
@@ -23,7 +23,7 @@ for (let i = 1; i <= 100; i++ ){
     else if ((i % 3) == 0){
         console.log(`fizz`);
         // let box = document.createElement(`div`);
-        // box.classList.add(`box`);
+        box.classList.add(`bg_color_green`);
         let textI = document.createTextNode(`fizz`);
         box.appendChild(textI);
         // document.getElementById(`containerId`).appendChild(box);
@@ -31,7 +31,7 @@ for (let i = 1; i <= 100; i++ ){
     else if ((i % 5) == 0){
         console.log(`buzz`);
         // let box = document.createElement(`div`);
-        // box.classList.add(`box`);
+        box.classList.add(`bg_color_orange`);
         let textI = document.createTextNode(`buzz`);
         box.appendChild(textI);
         // document.getElementById(`containerId`).appendChild(box);

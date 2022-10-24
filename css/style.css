@@ -5,7 +5,6 @@
     padding: 0;
 }
 .container{
-    background-color: aqua;
     display: flex;
     flex-wrap: wrap;
     width: 800px;
@@ -13,10 +12,20 @@
 .box{
     width: calc(100% / 7);
     height: 50px;
-    background-color: red;
-    border: 1px solid blue;
+    background-color: blue;
+    border: 1px solid red;
+    color: white;
     line-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.bg_color_green{
+    background-color: green;
+}
+.bg_color_orange{
+    background-color: orange;
+}
+.bg_color_red{
+    background-color: red;
 }
