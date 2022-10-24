@@ -7,9 +7,10 @@ let i = 0;
 for (let i = 1; i <= 100; i++ ){
     // Crea elementi in html corrispondenti al volore del contatore
     let box = document.createElement(`div`);
-    box.classList.add(`.box`);
-    box.innerHTML = i;
-    container.append(box);
+    // box.classList.add(`.box`);
+    let textI = document.createTextNode(i);
+    box.appendChild(textI);
+    document.getElementById(`containerId`).appendChild(box);
 
     if (((i % 3) == 0) && ((i % 5) == 0)){
         console.log(`fizzbuzz`);
